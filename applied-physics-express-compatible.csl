@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text">
+  <info>
+    <title>Applied Physics Express (Custom)</title>
+    <id>https://custom.mendeley.local/styles/applied-physics-express</id>
+    <link href="https://custom.apex/style" rel="self"/>
+    <author>
+      <name>Custom CSL Generator</name>
+    </author>
+    <updated>2025-06-12T00:00:00+00:00</updated>
+  </info>
+
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="author"/>
+      <text variable="issued" prefix=" (" suffix=")"/>
+    </layout>
+  </citation>
+
+  <bibliography>
+    <layout suffix=".">
+      <text variable="author"/>
+      <text variable="title" prefix=" " suffix="."/>
+      <text variable="container-title" prefix=" " suffix=","/>
+      <text variable="volume" prefix=" Vol. " suffix=","/>
+      <text variable="page" prefix=" pp. " suffix=","/>
+      <text variable="issued" prefix=" (" suffix=")"/>
+    </layout>
+  </bibliography>
+</style>
