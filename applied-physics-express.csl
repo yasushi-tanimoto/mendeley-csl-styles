@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>Applied Physics Express</title>
+    <id>http://www.zotero.org/styles/applied-physics-express</id>
+    <link href="http://www.zotero.org/styles/applied-physics-express" rel="self"/>
+    <author>
+      <name>OpenAI Assistant</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="science"/>
+    <updated>2025-06-05T06:22:46+00:00</updated>
+  </info>
+  <macro name="author">
+    <names variable="author">
+      <name initialize-with=". " name-as-sort-order="all" sort-separator=", " delimiter=", " and="text"/>
+    </names>
+  </macro>
+  <macro name="journal">
+    <group delimiter=", ">
+      <text variable="container-title" form="short" font-style="italic"/>
+      <text variable="volume" font-weight="bold"/>
+      <text variable="page"/>
+      <date variable="issued">
+        <date-part name="year" prefix="(" suffix=")"/>
+      </date>
+    </group>
+  </macro>
+  <citation collapse="citation-number">
+    <layout prefix="" suffix="." delimiter=", ">
+      <text variable="citation-number" suffix=")"/>
+    </layout>
+  </citation>
+  <bibliography et-al-min="4" et-al-use-first="3" second-field-align="flush">
+    <layout prefix="" suffix="." delimiter=". ">
+      <text variable="citation-number" suffix=")"/>
+      <text macro="author" suffix=", "/>
+      <text macro="journal"/>
+    </layout>
+  </bibliography>
+</style>
